@@ -1,14 +1,14 @@
 javascript:
-var version="1.0"
-var i;
-var iInfo=document.getElementsByClassName("newsinfo");
-var iTitle=document.getElementsByTagName("dt");
-var box=[];
-var n_info=iInfo.length;
-var n_title=iTitle.length;
-var re=/\d+/g;//match number
-for(var i=0;i<n_info;i++)
-{
+
+    var i;
+    var iInfo=document.getElementsByClassName("newsinfo");
+    var iTitle=document.getElementsByTagName("dt");
+    var box=[];
+    var n_info=iInfo.length;
+    var n_title=iTitle.length;
+    var re=/\d+/g;
+    for(var i=0;i<n_info;i++)
+    {
         var info=iInfo.item(i).innerHTML;
         var title=iTitle.item(i+35).innerHTML;
         var iclick=iInfo.item(i).getElementsByClassName("click");
@@ -21,6 +21,6 @@ for(var i=0;i<n_info;i++)
         {
           box.push((i+1)+" "+title+" click: "+num_click+" comments: "+num_comments+"<br>")
         }
-};
-box=(box.toString()).replace(/,/g,"");// remove comma
-document.write(box);//write can only do once
+    };
+    box=(box.toString()).replace(/,/g,"");
+    document.write(box);
