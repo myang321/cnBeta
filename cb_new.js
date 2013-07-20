@@ -19,7 +19,7 @@ javascript:
         var num_score=iscore[0].innerHTML;
         if(num_click>=5000 || num_comments>=20)
         {
-          box.push((i+1)+" "+title+" click: "+num_click+" comments: "+num_comments+"<br>")
+          box.push((i+1)+" "+title+" click: "+num_click+" comments: "+num_comments+"<br><br>")
         }
     };
     box=(box.toString()).replace(/,/g,"");
